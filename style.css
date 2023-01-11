@@ -1,0 +1,146 @@
+.slider-section {
+  background-color: #131313;
+  padding-top: 107px;
+  padding-bottom: 130px;
+}
+
+.contain {
+  margin-left: 134px;
+  margin-right: 134px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.text-head {
+  font-family: 'Yeseva One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 27px;
+  line-height: 37px;
+  letter-spacing: -0.07em;
+  text-transform: uppercase;
+  color: #E3B873;
+}
+
+.text-head-p {
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 27px;
+  color: #FFFFFF;
+}
+
+.text-options {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.city-head,
+.apart-head,
+.time-head,
+.cost-head {
+  font-family: 'Yeseva One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+  color: #E3B873;
+}
+
+.city-text,
+.apart-text,
+.time-text,
+.cost-text {
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 21px;
+  color: #FFFFFF;
+}
+
+.text-content {
+  margin-right: 50px;
+}
+
+.btn-slider {
+  font-family: 'Yeseva One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: #FFFFFF4D;
+  padding: 0;
+  background: #131313;
+  border: none;
+  cursor: pointer;
+  margin-right: 60px;
+}
+
+.btn-slider.active {
+  color: #E3B873;
+  border-bottom:1px solid #E3B873;
+}
+
+.img-output {
+  margin-top: 53px;
+}
+
+.slider-control {
+  margin-top: 86px;
+  display: flex;
+}
+
+.btn-left,
+.btn-right {
+  border: none;
+  background-color: #131313;
+  cursor: pointer;
+  display: flex;
+}
+
+.img-output, 
+.image {
+  background-size: cover;
+  background-position: center center;
+  transition: opacity 800ms ease;
+  width: 679px;
+  height: 482px;
+  opacity: 0;
+  position: absolute;
+}
+
+.image.active,
+.img-output {
+  opacity: 1;
+}
+
+.slider-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 30px 0px 30px;
+}
+
+.slider-dots-item {
+  width: 10px;
+  height: 10px;
+  background: rgba(255, 255, 255, 0.3);;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: backhround 0.4s ease;
+}
+
+.slider-dots-item:not(:last-child) {
+  margin-right: 18px;
+}
+
+.slider__dots-item:hover, 
+.slider-dots-item.active {
+  background: #FFFFFF;
+}
